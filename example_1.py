@@ -12,4 +12,4 @@ finally:
     # закрываем браузер после всех манипуляций
     browser.quit()
     # закрывает текущее окно браузера
-    browser.close() 
+    browser.close()

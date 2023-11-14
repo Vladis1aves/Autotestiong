@@ -3,11 +3,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
 
-#Неявное ожидание
-browser.implicitly_wait(5)
+
 
 browser = webdriver.Chrome()
 browser.get("http://suninjuly.github.io/wait1.html")
+#Неявное ожидание
+browser.implicitly_wait(5)
 
 button = browser.find_element(By.ID, "verify")
 button.click()
