@@ -19,7 +19,8 @@ class TestLink1():
                                  "https://stepik.org/lesson/236905/step/1"
                              ]
                              )
-    def test_login_link_1(self, browser, link):
+    def test_login_link_1(self, browser_chrome, link):
+        browser = browser_chrome
         browser.get(link)
         login = browser.find_element(By.CSS_SELECTOR, "header nav a[href*='login']")
         login.click()
