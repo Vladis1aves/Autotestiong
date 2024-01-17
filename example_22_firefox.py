@@ -14,4 +14,4 @@ driver = webdriver.Firefox()
 driver.get("https://stepik.org/lesson/25969/step/8")
 driver.quit()
 
-browser_name = request.config.getoption("browser_name")
+# browser_name = request.config.getoption("browser_name")

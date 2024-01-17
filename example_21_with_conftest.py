@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-class TestLink1():
+class TestLink1:
     @pytest.mark.parametrize("link",
                              [
                                  "https://stepik.org/lesson/236895/step/1",
@@ -19,8 +19,7 @@ class TestLink1():
                                  "https://stepik.org/lesson/236905/step/1"
                              ]
                              )
-    def test_login_link_1(self, browser_chrome, link):
-        browser = browser_chrome
+    def test_login_link_1(self, browser, link):
         browser.get(link)
         login = browser.find_element(By.CSS_SELECTOR, "header nav a[href*='login']")
         login.click()

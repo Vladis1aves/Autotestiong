@@ -4,7 +4,6 @@ from selenium.webdriver.common.by import By
 import time
 
 
-
 class TestResourse(unittest.TestCase):
     def test_valid_resourse1(self):
         link = "http://suninjuly.github.io/registration1.html"
